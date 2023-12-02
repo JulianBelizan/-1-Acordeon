@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    margin: auto;
+    width: 460px;
+    border: 1px solid black;
+    padding: 35px 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: hsl(292, 16%, 49%);
+}
+
+h1{
+    display: flex;
+    gap: 15px;
+    font-size: 42px;
+    margin: 10px 0px;
+}
+
+h1 > img{
+    max-width: 30px;
+}
+
+.wrap{
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: start;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.wrap:hover{
+    color:hsl(293, 46%, 31%);
+}
+
+
+p{
+    font-size: 12px;
+    margin: 0px 0px 15px 10px;
+    display:none;
+    color: hsl(292, 42%, 14%);
+}
+
+.closed {
+    content: url('assets/images/icon-plus.svg');
+}
+
+.opened {
+    content: url(assets/images/icon-minus.svg);
+}
